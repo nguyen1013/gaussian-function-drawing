@@ -18,7 +18,7 @@ void gaussianDrawing(int a, int c) {
     x = ceil(c * sqrt(2 * log((double)a / y))); // solving x according to y from the Gaussian function y = a*e^(-x^2/(2*c^2)
     setFGcolor(RED + y % 7);    
     gotoXY(26-y, 40 - x); // drawing from the top of the chart, with column from 40-x to the column 40+x;
-    for (int i = 0; i < 4 * x + 1; i+=2) { 
+    for (int i = 0; i < 2 * x + 1; i+=1) { 
       printf("|");
     }
   }
