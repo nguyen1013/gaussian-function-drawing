@@ -4,7 +4,7 @@
 
 void gaussianDrawing(int a, int c) {
   unsigned char pipe = 221; // char code of a block pipe
-  int x, y; // coordinate variables (x=0 at column 40, and y=1 at the row 25)
+  int x, y; // coordinate variables (x=0 at column 40, and y=1 at the bottom row)
 
   clearScreen();
 
