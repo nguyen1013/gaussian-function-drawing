@@ -5,10 +5,11 @@
 void gaussianDrawing(int a, int c) {
   unsigned char pipe = 221; // char code of a block pipe
   int x, y; // coordinate variables (x=0 at column 40, and y=1 at the row 25)
+
   clearScreen();
-  gotoXY(1, 30);
 
   // set style for the TITLE
+  gotoXY(1, 30);
   setBGcolor(YELLOW);
   setFGcolor(BLUE);
   printf("GAUSSIAN FUNCTION CHART"); // TITLE
@@ -19,7 +20,7 @@ void gaussianDrawing(int a, int c) {
   for (y = a; y > 0; y--) {
     x = ceil(c * sqrt(2 * log((double)a / y))); // solving x according to y from the Gaussian function y = a*e^(-x^2/(2*c^2)
     //setFGcolor(RED + y % 7);    
-    gotoXY(26-y, 40 - x); // drawing from the top of the chart, with column from 40-x to the column 40+x;
+    gotoXY(27-y, 40 - x); // drawing from the top of the chart, with column from 40-x to the column 40+x;
     for (int i = 0; i < 2 * x + 1; i+=1) { 
       printf("%c", pipe);
     }
