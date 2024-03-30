@@ -7,5 +7,8 @@ int main() {
   printf("Enter the height (a <= 24) and standard deviation (c <= 15): ");
   scanf_s("%d %d", &a, &c);
   gaussianDrawing(a, c);
+
+
+
   return 0;
 }
