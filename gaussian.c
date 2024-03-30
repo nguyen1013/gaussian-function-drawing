@@ -27,6 +27,4 @@ void gaussianDrawing(int a, int c) {
   }
 
   resetColors();
-  printf("\nPress any key to exit...");
-  getch();
 }
