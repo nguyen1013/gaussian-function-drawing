@@ -4,7 +4,7 @@
 int main() {
   int a, c; // asumption b = 40 to make the chart at the middle of the screen
   printf("Welcome to Gaussian function drawing\n");
-  printf("Enter the height (a <= 24) and standard deviation (c <= 15): ");
+  printf("Enter the height and the standard deviation (c <= 15): ");
   scanf_s("%d %d", &a, &c);
   gaussianDrawing(a, c);
 
