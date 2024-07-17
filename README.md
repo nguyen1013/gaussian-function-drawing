@@ -1,1 +1,1 @@
-# Gaussian
+# Gaussian function plotting
